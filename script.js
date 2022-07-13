@@ -38,7 +38,7 @@ async function getISS() {
 // Initializes a map
     var map = L.map('map').setView([0, 0], 13)
     var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 5,
+    maxZoom: 3,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     var marker = L.marker([0, 0], {icon:issIcon}).addTo(map);
